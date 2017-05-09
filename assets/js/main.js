@@ -5,3 +5,5 @@ function Student(name, techSkills, lifeSkills) {
     this.lifeSkills = lifeSkills + "%";
     this.status = "Active";
 };
+
+var students = [];
