@@ -1,7 +1,25 @@
 body {
-background-image: url(../img/aaa.jpg);
-background-size: cover;
+    background-image: url(../img/aaa.jpg);
+    background-size: cover;
+    color: #753802;
+}
 
-      color: #753802;
+h1 {
+  font-size: : 50px;
+  color: #9e2c03;
+  font-family: futura;
+  font-weight: normal;
+}
 
-  }
+p button {
+  font-size: 15px;
+  background: #f9bd63;
+  font-family: futura;
+  color: #9e2c03;
+}
+
+p button onclick {
+  font-size: 15px;
+  font-family: futura;
+  color: #9e2c03;
+}
