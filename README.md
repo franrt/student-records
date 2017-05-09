@@ -11,7 +11,7 @@
 * **Su**   --
 * **Bere** --
 * **Nico** --
-* **Maca** --
+* **Maca** -- *Una parte de CSS*
 * **Clau** --
 
 El código funcionando se puede ver en el siguiente [link](http://franrt.github.io/student-records)
