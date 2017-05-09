@@ -19,5 +19,18 @@ Producto.prototype.toHTML = function () {
   return html;
 }
 
+//Función que une todas las personas guardadas en el array students
+function mergeHTML (){
+  var html = '';
+  for (i=0; i<students.length; i++){
+    html += name[i].toHTML();
+  }
+  return html;
+}
 
+//función que imprime un estudiante luego de ingresarlo
+function printHTML (html){
+  records.innerHTML = '';
+  records.innerHTML = html;
+}
 
