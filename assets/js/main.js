@@ -11,11 +11,10 @@ function Student(name, techSkills, lifeSkills) {
     this.status = "Active";
 };
 
-
-//Método para imprimir un producto en html
-Student.prototype.toHTML = function () {
+//Método para imprimir una estudiante en html
+Student.prototype.toHTML = function(){
   var html = '';
-  html += //aqui tengo que usar el constructor para crear el formato e como aparecera cada vez que se agregue una alumna
+  html += this.name.toUpperCase() + "<br>" + "Tech Skills " + this.techSkills +"<br>"+ "Life Skills " +this.lifeSkills;
   return html;
 }
 
@@ -28,10 +27,8 @@ function mergeHTML (){
   return html;
 }
 
-//función que imprime un estudiante luego de ingresarlo
-function printHTML (html){
-  techSkills.innerHTML = '';
-  lifeSkills.innerHTML = html;
+//función que imprime el ultimo estudiante luego de ingresarlo
+function printHTML(html){
+  espacio.innerHTML = '';
+  espacio.innerHTML = html;
 }
-
-
