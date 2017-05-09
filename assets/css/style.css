@@ -23,6 +23,7 @@ p button {
 button:hover { /* cambios al pasar el mouse */
   background: #9e2c03;
   color: #f9bd63;
+  cursor: pointer; /* aparece la mano señalando en el boton */
 }
 
 p {
@@ -45,7 +46,7 @@ footer p {
 }
 
 img {
-  height: 50%;
+  height: 100%;
   margin: auto;
   display: block;
 }
