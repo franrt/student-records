@@ -1,3 +1,4 @@
+
 // Constructor para generar una nueva estudiante
 function Student(name, techSkills, lifeSkills) {
     this.name = name;
@@ -7,3 +8,4 @@ function Student(name, techSkills, lifeSkills) {
 };
 
 var students = [];
+
