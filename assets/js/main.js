@@ -13,7 +13,7 @@ function Student(name, techSkills, lifeSkills) {
 
 
 //Método para imprimir un producto en html
-Producto.prototype.toHTML = function () {
+Student.prototype.toHTML = function () {
   var html = '';
   html += //aqui tengo que usar el constructor para crear el formato e como aparecera cada vez que se agregue una alumna
   return html;
