@@ -30,7 +30,8 @@ function mergeHTML (){
 
 //función que imprime un estudiante luego de ingresarlo
 function printHTML (html){
-  records.innerHTML = '';
-  records.innerHTML = html;
+  techSkills.innerHTML = '';
+  lifeSkills.innerHTML = html;
 }
+
 
