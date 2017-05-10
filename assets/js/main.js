@@ -1,3 +1,7 @@
+//traemos el espacio div desde html con 
+var espacio = document.getElementById('espacio');
+var students = [];
+
 // Constructor para generar una nueva estudiante
 
 function Student(name, techSkills, lifeSkills) {
@@ -6,10 +10,6 @@ function Student(name, techSkills, lifeSkills) {
     this.lifeSkills = lifeSkills + "%";
     this.status = "Active";
 };
-
-//traemos el espacio div desde html con 
-var espacio = document.getElementById('espacio');
-var students = [];
 
 //Método para imprimir una estudiante en html
 Student.prototype.toHTML = function(){
@@ -27,11 +27,7 @@ function alert2(){
 }
 
 //Función que une todas las personas guardadas en el array students
-function mergeHTML(){
-  var html = '';
-  for (i=0; i<students.length; i++){
-    html += students[i].toHTML();
-  }
+function mergeHTML(){students.forEach(function(i){html += name[i].toHTML();});
   return html;
 }
 
@@ -45,7 +41,8 @@ function printHTML(html){
 
 function addStudent(){
 	var name = prompt('Ingrese su nombre');
-	var techSkills = prompt('Ingrese el % de sus Habilidades Emocionales');
+	var techSkills = prompt('Ingrese el % de sus Habilidades Tecnicas');
+	var lifeSkills = prompt('Ingrese el % de sus Habilidades Emocionales');
 	var estudiante = new Student(name,techSkills,lifeSkills);
 	students.push(estudiante);
 
