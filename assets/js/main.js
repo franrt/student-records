@@ -19,17 +19,22 @@ Student.prototype.toHTML = function(){
 }
 //Funciones alerts para botones sin funcionabilidad
 function alert1(){
-  alert("Estamos trabajando para usted from the hell")
+  alert("Estamos trabajando para usted from hell")
 }
 
 function alert2(){
-  alert("Ups!! it doesn't works")
+  alert("Ups!! it doesn't work")
 }
 
 //Función que une todas las personas guardadas en el array students
-function mergeHTML(){students.forEach(function(i){html += name[i].toHTML();});
+function mergeHTML(){
+  var html = '';
+  for (i=0; i<students.length; i++){
+    html += students[i].toHTML();
+  }
   return html;
 }
+
 
 //Función que imprime el ultimo estudiante luego de ingresarlo
 function printHTML(html){
@@ -48,6 +53,7 @@ function addStudent(){
 
 	printHTML(estudiante.toHTML());
 };
+
 
 //Al hacerle click al boton Print All imprime a todas las estudiantes en el html
 
