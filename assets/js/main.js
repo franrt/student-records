@@ -52,4 +52,8 @@ function addStudent(){
 	printHTML(estudiante.toHTML());
 };
 
+//Al hacerle click al boton Print All imprime a todas las estudiantes en el html
 
+function printAll(){
+	printHTML(mergeHTML());
+}
