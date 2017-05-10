@@ -17,6 +17,14 @@ Student.prototype.toHTML = function(){
   html += this.name.toUpperCase() + "<br>" + "Tech Skills " + this.techSkills +"<br>"+ "Life Skills " +this.lifeSkills+ "<br><br>";
   return html;
 }
+//Funciones alerts para botones sin funcionabilidad
+function alert1(){
+  alert("Estamos trabajando para usted from the hell")
+}
+
+function alert2(){
+  alert("Ups!! it doesn't works")
+}
 
 //Función que une todas las personas guardadas en el array students
 function mergeHTML(){
