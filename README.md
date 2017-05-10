@@ -19,7 +19,7 @@
 - **Dani** -- *Crear funcionalidad a botón agregar estudiante e imprimir*
 - **Su**   -- *Crear funcionalidad a botón agregar estudiante e imprimir y parte del readme.*
 - **Bere** -- *Crear funcionalidad a botón agregar estudiante e imprimir*
-- **Nico** -- *Crear funcionalidad a botón agregar estudiante e imprimir y complementación del readme*
+- **Nico** -- *Crear funcionalidad a botón agregar estudiante e imprimir y complemento del readme*
 - **Maca** -- *Creación de estilos del sitio con CSS*
 - **Clau** -- *Creación estructura HTML y Readme*
 
