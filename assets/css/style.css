@@ -1,7 +1,52 @@
 body {
-background-image: url(../img/aaa.jpg);
-background-size: cover;
+    background-image: url(../img/aaa.jpg);
+    background-size: cover;
+    color: #753802;
+}
 
-      color: #753802;
+h1 {
+  font-size: : 50px;
+  color: #9e2c03;
+  font-family: futura;
+  font-weight: normal;
+  text-align: center;
+}
 
-  }
+p button {
+  font-size: 15px;
+  background: #f9bd63;
+  font-family: futura;
+  color: #9e2c03;
+  line-height: 23px;
+}
+
+button:hover { /* cambios al pasar el mouse */
+  background: #9e2c03;
+  color: #f9bd63;
+  cursor: pointer; /* aparece la mano señalando en el boton */
+}
+
+p {
+    text-align: center;
+    line-height: 23px;
+}
+
+p button onclick {
+  font-size: 15px;
+  font-family: futura;
+  color: #9e2c03;
+}
+
+footer p {
+  font-size: 12px;
+  font-family: futura;
+  color: #9e2c03;
+  text-align: center;
+  line-height: 5px;
+}
+
+img {
+  height: 100%;
+  margin: auto;
+  display: block;
+}
