@@ -12,51 +12,51 @@ function Student(name, techSkills, lifeSkills) {
 };
 
 //Método para imprimir una estudiante en html
-Student.prototype.toHTML = function(){
-  var html = '';
-  html += this.name.toUpperCase() + "<br>" + "Tech Skills " + this.techSkills +"<br>"+ "Life Skills " +this.lifeSkills+ "<br><br>";
-  return html;
-}
-//Funciones alerts para botones sin funcionabilidad
-function alert1(){
-  alert("Estamos trabajando para usted from hell")
+Student.prototype.toHTML = function() {
+        var html = '';
+        html += this.name.toUpperCase() + "<br>" + "Tech Skills " + this.techSkills + "<br>" + "Life Skills " + this.lifeSkills + "<br>" + "Status " + this.status + "<br><br>";
+        return html;
+    }
+    //Funciones alerts para botones sin funcionabilidad
+function alert1() {
+    alert("Estamos trabajando para usted from hell")
 }
 
-function alert2(){
-  alert("Ups!! it doesn't work")
+function alert2() {
+    alert("Ups!! it doesn't work")
 }
 
 //Función que une todas las personas guardadas en el array students
-function mergeHTML(){
-  var html = '';
-  for (i=0; i<students.length; i++){
-    html += students[i].toHTML();
-  }
-  return html;
+function mergeHTML() {
+    var html = '';
+    for (i = 0; i < students.length; i++) {
+        html += students[i].toHTML();
+    }
+    return html;
 }
 
 
 //Función que imprime el ultimo estudiante luego de ingresarlo
-function printHTML(html){
-  espacio.innerHTML = '';
-  espacio.innerHTML = html;
+function printHTML(html) {
+    espacio.innerHTML = '';
+    espacio.innerHTML = html;
 }
 
 //Cuando hacen click en el boton de nueva estudiante, crea una nueva estudiante y la añade al array de todas las estudiantes.
 
-function addStudent(){
-	var name = prompt('Ingrese su nombre');
-	var techSkills = prompt('Ingrese el % de sus Habilidades Tecnicas');
-	var lifeSkills = prompt('Ingrese el % de sus Habilidades Emocionales');
-	var estudiante = new Student(name,techSkills,lifeSkills);
-	students.push(estudiante);
+function addStudent() {
+    var name = prompt('Ingrese su nombre');
+    var techSkills = prompt('Ingrese el % de sus Habilidades Tecnicas');
+    var lifeSkills = prompt('Ingrese el % de sus Habilidades Emocionales');
+    var estudiante = new Student(name, techSkills, lifeSkills);
+    students.push(estudiante);
 
-	printHTML(estudiante.toHTML());
+    printHTML(estudiante.toHTML());
 };
 
 
 //Al hacerle click al boton Print All imprime a todas las estudiantes en el html
 
-function printAll(){
-	printHTML(mergeHTML());
+function printAll() {
+    printHTML(mergeHTML());
 }
